@@ -1,0 +1,5 @@
+{
+  "name": "Symbol Tracker",
+  "description": "An application to authenticate and view a list of trading symbols via a WebSocket connection. It features a login page and a symbols display page, with state managed by React Context.",
+  "requestFramePermissions": []
+}

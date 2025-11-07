@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Symbol Tracker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class', // Enable class-based dark mode
+        theme: {
+          extend: {
+            colors: {
+              // Light theme colors
+              'primary': '#1e40af',
+              'primary-hover': '#1d4ed8',
+              'background': '#f3f4f6',
+              'card': '#ffffff',
+              'input': '#e5e7eb',
+              'text': '#111827',
+              'text-medium': '#6b7280',
+
+              // Dark theme colors
+              'primary-dark': '#3b82f6',
+              'primary-hover-dark': '#60a5fa',
+              'background-dark': '#111827',
+              'card-dark': '#1f2937',
+              'input-dark': '#374151',
+              'text-dark': '#f9fafb',
+              'text-medium-dark': '#9ca3af',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body class="bg-background dark:bg-background-dark text-text dark:text-text-dark transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
